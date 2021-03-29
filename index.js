@@ -58,7 +58,7 @@ const promptUser = () => {
     ]);
   };
 
-const liceseId = answers.license.toLowerCase()
+// const liceseId = answers.license.toLowerCase()
 
 // TODO: Create a function to write README file
 // function writeToFile(fileName, data) {}
@@ -75,7 +75,7 @@ const generateReadMe = (answers) =>
   * [Questions](#questions)
 
   ## License
-  ${licenseId}
+  ${license.mit}
   ## Description
 
   ${answers.description}
