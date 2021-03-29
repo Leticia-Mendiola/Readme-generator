@@ -59,3 +59,44 @@ const promptUser = () => {
   };
 
 const liceseId = answers.license.toLowerCase()
+
+// TODO: Create a function to write README file
+// function writeToFile(fileName, data) {}
+const generateReadMe = (answers) =>
+  `# ${answers.title}
+
+  ## Table of Contents
+  * [License](#license)
+  * [Description](#description)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributing](#contributing)
+  * [Testing](#testing)
+  * [Questions](#questions)
+
+  ## License
+  ${licenseId}
+  ## Description
+
+  ${answers.description}
+
+  ## Installation
+
+  ${answers.install}
+
+  ## Usage
+
+  ${answers.usage}
+
+  ## Contributing
+
+  ${answers.contribute}
+
+  ## Testing
+
+  ${answers.test}
+
+  ## Questions
+
+  If you have any questions, please feel free to reach out to me on GitHub at ${answers.github} or via email at ${answers.email}.
+  `;
