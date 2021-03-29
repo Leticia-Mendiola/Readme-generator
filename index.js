@@ -100,3 +100,11 @@ const generateReadMe = (answers) =>
 
   If you have any questions, please feel free to reach out to me on GitHub at ${answers.github} or via email at ${answers.email}.
   `;
+
+  // TODO: Create a function to initialize app
+const init = () => {
+    promptUser()
+      .then((answers) => writeFileAsync('README.md', generateReadMe(answers)))
+      .then(() => console.log('Successfully wrote to README.md'))
+      .catch((err) => console.error(err));
+  };
