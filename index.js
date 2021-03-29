@@ -108,3 +108,6 @@ const init = () => {
       .then(() => console.log('Successfully wrote to README.md'))
       .catch((err) => console.error(err));
   };
+
+  // Function call to initialize app
+init();
