@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
-const license = require('./utils/generateMarkdown.js');
+const licenseId = require('./utils/generateMarkdown.js');
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
@@ -58,8 +58,20 @@ const promptUser = () => {
     ]);
   };
 
-// const liceseId = answers.license.toLowerCase()
-
+// const licenseId = [
+// [eclipse,"[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)"],
+// [gnu,"[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)"],
+// [ibm,"[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)"],
+// [mit,"[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"],
+// [mozilla,"[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)"],
+// [zlib,"[![License: Zlib](https://img.shields.io/badge/License-Zlib-lightgrey.svg)](https://opensource.org/licenses/Zlib)"]
+// ]
+// const licenseValue = answers.license;
+// for (const [name,value] of licenseId) {
+//   if {
+//     licenseValue == name
+//   }
+// }
 // TODO: Create a function to write README file
 // function writeToFile(fileName, data) {}
 const generateReadMe = (answers) =>
@@ -75,7 +87,7 @@ const generateReadMe = (answers) =>
   * [Questions](#questions)
 
   ## License
-  ${license.mit}
+  ${licenseId.license}
   ## Description
 
   ${answers.description}
