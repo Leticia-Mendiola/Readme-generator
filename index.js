@@ -87,7 +87,7 @@ const generateReadMe = (answers) =>
   * [Questions](#questions)
 
   ## License
-  ${licenseId.license}
+  ${licenseId.mit}
   ## Description
 
   ${answers.description}
